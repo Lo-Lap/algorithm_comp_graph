@@ -158,9 +158,15 @@
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ColorPixel.ps" />
-    <None Include="ColorVertex.vs" />
-  </ItemGroup>
+  <CopyFileToFolders Include="ColorPixel.ps">
+    <FileType>Document</FileType>
+    <DestinationFolder>$(OutDir)</DestinationFolder>
+  </CopyFileToFolders>
+  <CopyFileToFolders Include="ColorVertex.vs">
+    <FileType>Document</FileType>
+    <DestinationFolder>$(OutDir)</DestinationFolder>
+  </CopyFileToFolders>
+</ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

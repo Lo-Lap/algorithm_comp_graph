@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{e88c24ac-dedd-4c21-9f71-ad9ede228c1d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -53,11 +56,11 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ColorVertex.vs">
-      <Filter>Файлы ресурсов</Filter>
-    </None>
-    <None Include="ColorPixel.ps">
-      <Filter>Файлы ресурсов</Filter>
-    </None>
+    <CopyFileToFolders Include="ColorPixel.ps">
+      <Filter>Shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ColorVertex.vs">
+      <Filter>Shaders</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
